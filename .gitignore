@@ -1,0 +1,4 @@
+.vscode/
+_MACOSX/
+.DS_Store
+csv_files/job_postings_fact.csv
