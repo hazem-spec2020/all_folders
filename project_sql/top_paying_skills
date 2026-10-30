@@ -1,0 +1,30 @@
+/*
+answer what are top skills based on salary?
+- look at the average salary associated with each skill for data analyst positions?
+- focuses on roles with specified salaries regardless the job_location
+- why? it helps to know how specific skills impact salaries for each position, and revails how different skills impact salaries_most financially rewarding skills_*/
+
+
+
+
+select 
+skills, round (avg( salary_year_avg), 0) as salary_avg , job_location, name
+
+from 
+    job_postings_fact
+    INNER JOIN skills_job_dim ON skills_job_dim.job_id = job_postings_fact.job_id
+    inner JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
+    inner join company_dim on company_dim. company_id = job_postings_fact.company_id and salary_year_avg IS NOT NULL
+
+where
+    job_title_short = 'Data Analyst' 
+    and job_work_from_home = 'True'  and
+    salary_year_avg is not NULL , and
+    job_work_from_home = 'True'
+ 
+
+group by skills, job_location, name
+order by salary_avg desc
+limit 25 ;
+
+

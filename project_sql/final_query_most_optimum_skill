@@ -1,0 +1,48 @@
+/*
+what are the most optimum demanding skills to learn (aka it's in high demand and high paying skill) 
+- identify skills with high demand and high paied salary year average for data analyst roles 
+- concentrates on remote positions with high specified salaries
+- why? targets skills that offer job security (high demand) and financial benefits( high salaries) offering job strategetic insights for career development*/
+
+
+
+with skills_demand as(
+
+select
+    skills_dim.skill_id, count( skills_job_dim.job_id) as demand_count , skills
+
+
+from 
+    job_postings_fact
+    inner JOIN skills_job_dim ON skills_job_dim.job_id = job_postings_fact.job_id
+    inner JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
+    inner join company_dim on company_dim. company_id = job_postings_fact.company_id and salary_year_avg IS NOT NULL
+where
+    job_title_short = 'Data Analyst' and job_work_from_home = True 
+group by skills_dim.skill_id, skills          -- we mentioned a primary key in order by statement
+), 
+avg_salary as(
+
+select 
+    skills_job_dim.skill_id , skills , round (avg( salary_year_avg), 0) as salary_avg 
+
+from 
+    job_postings_fact
+    INNER JOIN skills_job_dim ON skills_job_dim.job_id = job_postings_fact.job_id
+    inner JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
+    inner join company_dim on company_dim. company_id = job_postings_fact.company_id and salary_year_avg IS NOT NULL
+
+where
+    job_title_short = 'Data Analyst' and
+    salary_year_avg is not NULL 
+group by skills_job_dim.skill_id, skills     -- we mentioned a primary key in order by statement
+)
+
+
+select 
+    skills_demand.skill_id , skills_demand.skills , demand_count, avg_salary
+from 
+    skills_demand 
+inner join avg_salary on avg_salary.skill_id = skills_demand.skill_id 
+
+order by skill_id 
