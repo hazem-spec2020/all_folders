@@ -1,9 +1,9 @@
-# Introduction
+https://github.com/hazem-spec2020/all_folders/security# Introduction
 📊 Dive into the data job market! Focusing on data analyst roles, this project explores 💰 top-paying jobs, 🔥 in-demand skills, and 📈 where high demand meets high salary in data analytics. Check them out here: [project_sql folder](/project_sql) 
 # Background
 Driven by a quest to navigate the data analyst job market more effectively, this project was born from a desire to pinpoint top-paying and in-demand skills, streamlining others' work to find optimal jobs.
 
-data hails from my [SQL Course](/https://lukebarousse.com/sql). It's packed with insights on job titles, salaries, locations, and essential skills.
+<img width="4032" height="1753" alt="image" src="https://github.com/user-attachments/assets/8e07ceb7-7c39-4b9f-8690-369ce3feea75" />
 
 ### the question i wanted to answer through my SQL queries were:
 1. what are the top-paying data analyst jobs?
