@@ -4,7 +4,7 @@ SQL queries? Check them out here: [project_sql folder](/project_sql)
 # Background
 Driven by a quest to navigate the data anayst job-market more effecttvely, this project was born from a desire to pinpoint  top-paid and in-demand skills, streamlinig others work to find optimal jobs.
 
-data hails from my [SQL Course](https//:lukebarousse.com/sql) . It's packed with insights on job titles, salaries, locations, and essential skills.
+data hails from my [SQL Course](https://lukebarousse.com/sql) . It's packed with insights on job titles, salaries, locations, and essential skills.
 
 ### the question i wanted to answer through my SQL queries were:
 1. what are the top-paying data analyst jobs?
@@ -42,7 +42,7 @@ where job_postings_fact.job_location = 'Anywhere'and job_postings_fact.salary_ye
 
 order by salary_year_avg DESC
 limit 10 ; 
-```
+```sql
 Here's the breakdown of the top paying data analyst jobs in 2023:
 - **wide salary range** top 10 paying data analyst roles span from $184.000 to $650.000, indicating significant salary potential in the field.
 - **diverse employers** companies like smartAssest, meta, and AT&T are among those offering high salaries, showing a broad interest across different industries.
