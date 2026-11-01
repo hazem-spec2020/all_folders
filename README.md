@@ -142,6 +142,7 @@ Here's a breakdown of the results for top paying skills for Data Analysts:
 ● **Cloud Computing Expertise:** Familiarity with cloud and data engineering tools (Elasticsearch, Databricks, GCP) underscores the growing importance of cloud-based analytics environments, suggesting that cloud proficiency significantly boosts earning potential in data analytics.
 
 ![avg_salary_for_top_10_paying_jobs](project_sql\assests\avg_salary_for_top_10_paying_jobs.png)
+
 *Table of the average salary for the top 10 paying skills for data analysts*
 
 5. ## Most Optimal Skills to Learn
