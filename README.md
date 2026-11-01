@@ -83,7 +83,7 @@ INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
 ORDER BY
     salary_year_avg DESC;
 ```
-![2_top_paying_roles_skills](project_sql\assests\2_top_paying_roles_skills.png)
+![2_top_paying_roles_skills](project_sql/assests/2_top_paying_roles_skills.png)
 *Bar graph visualizing the count of skills for the top 10 paying jobs for data analysts; ChatGPT generated this graph from my SQL query results*
 
 3. ## In-Demand Skills for Data Analysts
@@ -110,7 +110,7 @@ Here's the breakdown of the most demanded skills for data analysts in 2023
 SQL and Excel remain fundamental, emphasizing the need for strong foundational skills in data processing and spreadsheet manipulation.
 Programming and Visualization Tools like Python, Tableau, and Power BI are essential, pointing towards the increasing importance of technical skills in data storytelling and decision support.
 
-![top 5 skills](project_sql\assests\top_5_skills.png)
+![top 5 skills](project_sql/assests/top_5_skills.png)
 
 *Table of the demand for the top 5 skills in data analyst job postings*
 
@@ -141,7 +141,7 @@ Here's a breakdown of the results for top paying skills for Data Analysts:
 ●**Software Development & Deployment Proficiency:** Knowledge in development and deployment tools (GitLab, Kubernetes, Airflow) indicates a lucrative crossover between data analysis and engineering, with a premium on skills that facilitate automation and efficient data pipeline management.
 ● **Cloud Computing Expertise:** Familiarity with cloud and data engineering tools (Elasticsearch, Databricks, GCP) underscores the growing importance of cloud-based analytics environments, suggesting that cloud proficiency significantly boosts earning potential in data analytics.
 
-![avg_salary_for_top_10_paying_jobs](project_sql\assests\avg_salary_for_top_10_paying_jobs.png)
+![avg_salary_for_top_10_paying_jobs](project_sql/assests/avg_salary_for_top_10_paying_jobs.png)
 *Table of the average salary for the top 10 paying skills for data analysts*
 
 5. ## Most Optimal Skills to Learn
