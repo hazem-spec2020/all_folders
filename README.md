@@ -20,11 +20,8 @@ data hails from my [SQL_Course](https://lukebarousse.com/sql) It's packed with i
 for my deep dive into the data analyst job market, i harnessed the poor of several key tools:
 -   SQL: the backbone of my analysis, allowing me to query the database and eneath critical insights.
 - PostgreSQL: the chosen database managment system, ideal for handling the job posting data.
-<<<<<<< HEAD
-Visual Studio Code: My go-to fpr data base mangment and executing SQL queries.
-=======
+  
 Visual Studio Code: My go-to data base management and executing SQL queries.
->>>>>>> b40bc12821899f6bdfb58d3582f04352d0eed762
 - Git & Github: Essential for version control and sharing my SQL scripts and analysis, ensuring collaboration and project tracking.
 
 ## 🏗️ Database Architecture & Schema Design
