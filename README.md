@@ -3,10 +3,10 @@
 Dive into the data job Focusing on data analyst roles, this project explores top_paying jobs, in_demand skills and where high demand meets high salary in data analytics.
 
 SQL queries? Check them out here: [project_sql](/project_sql) 
-Dive into the data job marj=ket! Focusing on data analyst roles, this project explores top_paying jobs, in_demand skills and where high demand meets high salary in data analytics.
+Dive into the data job market! Focusing on data analyst roles, this project explores top_paying jobs, in_demand skills and where high demand meets high salary in data analytics.
 
 # Background
-Driven by a quest to navigate the data anayst job-market more effectvely, this project was born from a desire to pinpoint  top-paid and in-demand skills, streamlinig others work to find optimal jobs.
+Driven by a quest to navigate the data analyst job-market more effectively, this project was born from a desire to pinpoint top-paid and in-demand skills, streamlining others' work to find optimal jobs.
 data hails from my [SQL_Course](https://lukebarousse.com/sql) It's packed with insights on job titles, salaries, locations, and essential skills.
 
 ### the question i wanted to answer through my SQL queries were:
@@ -17,10 +17,14 @@ data hails from my [SQL_Course](https://lukebarousse.com/sql) It's packed with i
 5. what are the most optimal skills too learn?
 
 # Tools i used
-for my deepp dive into the data analyst job market, i harnessed the poor of several key tools:
+for my deep dive into the data analyst job market, i harnessed the poor of several key tools:
 -   SQL: the backbone of my analysis, allowing me to query the database and eneath critical insights.
 - PostgreSQL: the chosen database managment system, ideal for handling the job posting data.
+<<<<<<< HEAD
 Visual Studio Code: My go-to fpr data base mangment and executing SQL queries.
+=======
+Visual Studio Code: My go-to data base management and executing SQL queries.
+>>>>>>> b40bc12821899f6bdfb58d3582f04352d0eed762
 - Git & Github: Essential for version control and sharing my SQL scripts and analysis, ensuring collaboration and project tracking.
 
 ## 🏗️ Database Architecture & Schema Design
@@ -49,7 +53,7 @@ Each query for this project aimed at investigating specific aspects of the data 
 here's how i approached each question:
 
 ### 1. Top paying Data Analyst Jobs
-to identify the highest-paying rol.es i filtered data analyst positions by average yearly salary and location, focusing on remote jobs. This query highlights the hhigh paying opportunities in the field.
+to identify the highest-paying roles i filtered data analyst positions by average yearly salary and location, focusing on remote jobs. This query highlights the high paying opportunities in the field.
 
 ``` sql
 SELECT 
@@ -75,11 +79,11 @@ limit 10 ;
 Here's the breakdown of the top paying data analyst jobs in 2023:
 - **wide salary range** top 10 paying data analyst roles span from $184.000 to $650.000, indicating significant salary potential in the field.
 - **diverse employers** companies like smartAssest, meta, and AT&T are among those offering high salaries, showing a broad interest across different industries.
-- **job title variety** there's a high diversity in job titles, from Data Analyst to Director of Analytics, reflecting varied roles and specializationswithin data analytics. 
+- **job title variety** there's a high diversity in job titles, from Data Analyst to Director of Analytics, reflecting varied roles and specializations within data analytics.
 
 ![image](project_sql/assests/image.png) 
 
-*Bar graph visualising the slalary for the top 10 salaries for data analysts; chatgpt generated this graph from my sql query results*
+*Bar graph visualising the salary for the top 10 salaries for data analysts; chatgpt generated this graph from my sql query results*
 
 2. Skills for Top Paying Jobs
 
@@ -214,9 +218,9 @@ Tableau is also highly sought after, with a bold count of 6. Other skills like R
 
 # What i learned 
 Thoughout this adventure i've turbocharged my SQL toolkit with some serious firepower:
-- **complex query crafting** mastered the art of advanced sql, merginh tables like a pro and wielding WITH clauses for ninja-level temp table maneuvers.
+- **complex query crafting** mastered the art of advanced sql, merging tables like a pro and wielding WITH clauses for ninja-level temp table maneuvers.
 - **Data Aggregation** got cozy with GROUP BY and turned aggregate functions like COUNT() and AVG() into my data-summarizing sidekicks.
-- **Analytical Wizadry** leveled up my reak-world puzzle-solving skills, turning questions into actionable, insightful SQL queries.
+- **Analytical wizardry** leveled up my real-world puzzle-solving skills, turning questions into actionable, insightful SQL queries.
 # Conclusions
 ### Insights 
 1. **Top-Paying Data Analyst Jobs**: the highest-paying jobs for data analysts that allow remote work offer a wide range of salaries, the highest at $650.000!
@@ -226,4 +230,4 @@ Thoughout this adventure i've turbocharged my SQL toolkit with some serious fire
 5. **optimal skills for job market value**: SQL leads in demand and offers for a high average salary, positioning it as one of the most optimal skills for a data analysts to learn to maximize their value.
 
 ### closing thoughts
-this project enhanced my SQL skills  and provided  valuable insights into the data analyst job market. the findings from the analysis serve as a guide to prioritizing skill development and job search efforts. aspiring data analysts can better position themselves in a competitive job market by focusing on high demand, high salary skills. this exploration highlights the importance of continous learning and adaptation to emerging trends in the field of data analytics. 
+this project enhanced my SQL skills and provided valuable insights into the data analyst job market. the findings from the analysis serve as a guide to prioritizing skill development and job search efforts. aspiring data analysts can better position themselves in a competitive job market by focusing on high demand, high-salary skills. this exploration highlights the importance of continuous learning and adaptation to emerging trends in the field of data analytics. 
