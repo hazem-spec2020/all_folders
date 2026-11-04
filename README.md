@@ -33,15 +33,15 @@ To efficiently store and query the job market dataset, the relational database w
 
 The relational model consists of four key tables designed to handle entity attributes and many-to-many relationships:
 
-1. **Fact Table (`job_postings_fact`)**
+**1. Fact Table (`job_postings_fact`)**
    * **Role:** Central transactional table holding core job advertisement records and numerical metrics.
    * **Key Columns:** `job_id` (Primary Key), foreign keys referencing companies (`company_id`), job location, salary metrics (`salary_year_avg`, `salary_hour_avg`), work-from-home indicators (`job_work_from_home`), and posting timestamps (`job_posted_date`).
 
-2. **Dimension Tables (`skills_dim` & `company_dim`)**
+**2. Dimension Tables (`skills_dim` & `company_dim`)**
    * **`skills_dim`:** Descriptive dimension storing localized skill metadata, including `skill_id` (Primary Key), technology names (`skills`), and technological domains (`type`).
    * **`company_dim`:** Dimension table storing organization profiles, including `company_id` (Primary Key), company `name`, links, and thumbnail assets.
 
-3. **Junction / Bridge Table (`skills_job_dim`)**
+**3. Junction / Bridge Table (`skills_job_dim`)**
    * **Role:** Resolves the **Many-to-Many (N:M)** relationship between individual job postings and required skills.
    * **Structure:** Contains composite mappings linking `job_id` to `skill_id`, allowing efficient aggregation of skill frequencies without altering the granular nature of the primary fact table.
 
@@ -82,7 +82,7 @@ Here's the breakdown of the top paying data analyst jobs in 2023:
 
 *Bar graph visualising the salary for the top 10 salaries for data analysts; chatgpt generated this graph from my sql query results*
 
-2. Skills for Top Paying Jobs
+### 2. Skills for Top Paying Jobs
 
 To understand what skills are required for the top-paying jobs, I joined the job postings with the skills data, providing insights into what employers value for high-compensation roles.
 
@@ -119,7 +119,7 @@ ORDER BY
 
 *Bar graph visualizing the count of skills for the top 10 paying jobs for data analysts; ChatGPT generated this graph from my SQL query results*
 
-3. ## In-Demand Skills for Data Analysts
+### 3.  In-Demand Skills for Data Analysts
 This query helped identify the skills most frequently requested in job postings, directing focus to areas with high demand.
 
 ```sql
@@ -148,7 +148,7 @@ Programming and Visualization Tools like Python, Tableau, and Power BI are essen
 
 *Table of the demand for the top 5 skills in data analyst job postings*
 
-4. ### Skills Based on Salary
+### 4.  Skills Based on Salary
 
 Exploring the average salaries associated with different skills revealed which skills are the highest paying.
 
@@ -180,7 +180,7 @@ Here's a breakdown of the results for top paying skills for Data Analysts:
 
 *Table of the average salary for the top 10 paying skills for data analysts*
 
-5. ## Most Optimal Skills to Learn
+### 5. Most Optimal Skills to Learn
 Combining insights from demand and salary data, this query aimed to pinpoint skills that are both in high demand and have high salaries, offering a strategic focus for skill development.
 
 ```sql
